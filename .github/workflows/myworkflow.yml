@@ -1,11 +1,11 @@
 name: use variables
+on: [push]
 jobs:
-  deploy:
-    if: ${{ github.ref == 'refs/heads/master' }}
-  needs: build
-  runs-on: ubuntu-latest
-  steps:
-    - name: Set Environment Variables
-      uses: ./.github/actions/setvars
-      with:
-        varFilePath: ./.github/variables/myvars.env
+  deploy1:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Environment Variables
+        uses: ./.github/actions/setvars
+        with:
+          varFilePath: ./.github/variables/myvars.env
