@@ -9,7 +9,5 @@ jobs:
         uses: tw3lveparsecs/github-actions-setvars@v0.1
         with:
           envFilePath: ./env/.github/variables/*
-          runs: |
-            echo $dish
-            echo $dish1
+      
            
