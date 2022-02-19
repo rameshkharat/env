@@ -8,6 +8,6 @@ jobs:
       - name: Set Environment Variables
         uses: tw3lveparsecs/github-actions-setvars@v0.1
         with:
-          envFilePath: ./env/.github/variables/myvars.env
+          envFilePath: ./drop/.github/variables/vars.env
       
            
