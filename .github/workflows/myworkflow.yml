@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set Environment Variables
-        uses: ./.github/actions/setvars
+        uses: tw3lveparsecs/github-actions-setvars@v0.1
         with:
-          varFilePath: ./.github/variables/myvars.env
+          envFilePath: ./env/.github/variables/*
+          runs: |
+            echo $dish
+            echo $dish1
+           
